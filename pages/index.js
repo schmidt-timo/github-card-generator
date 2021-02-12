@@ -58,7 +58,7 @@ const Home = () => {
       });
 
       // create Link and return
-      const link = "http://localhost:3000/r/" + id;
+      const link = "https://githubrepocards.herokuapp.com/r/" + id;
       document.getElementsByName('outputField')[0].style.visibility = "visible";
       document.getElementsByName('output')[0].value = link;
 

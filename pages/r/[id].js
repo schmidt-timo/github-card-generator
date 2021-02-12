@@ -157,7 +157,7 @@ export default Card;
 export async function getServerSideProps(context) {
 
     const id = context.params.id;
-    const card = await axios.get("http://localhost:3000/api/getCard/" + id);
+    const card = await axios.get("https://githubrepocards.herokuapp.com/api/getCard/" + id);
 
     const username = card.data.githubCard.username;
     const repo = card.data.githubCard.repo;
